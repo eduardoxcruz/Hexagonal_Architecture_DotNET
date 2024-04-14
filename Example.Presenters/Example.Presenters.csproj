@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\$ext_safeprojectname$.UseCasesPorts\$ext_safeprojectname$.UseCasesPorts.csproj" />
+        <ProjectReference Include="..\Example.UseCasesPorts\Example.UseCasesPorts.csproj"/>
     </ItemGroup>
 
 </Project>

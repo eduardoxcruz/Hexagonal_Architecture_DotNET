@@ -1,8 +1,10 @@
-﻿using Presenters.ExampleUseCase;
+﻿using Example.Presenters.ExampleUseCase;
+
 using Microsoft.Extensions.DependencyInjection;
 
+using UseCasesPorts.ExampleUseCase;
 
-namespace $ext_safeprojectname$.Presenters;
+namespace Example.Presenters;
 
 public static class DependencyContainer
 {
@@ -10,7 +12,7 @@ public static class DependencyContainer
         this IServiceCollection services)
     {
         services.AddScoped<IExampleUseCaseOutputPort, ExampleUseCasePresenter>();
-        
+
         return services;
     }
 }

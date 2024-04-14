@@ -1,9 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using Example.EFCore.DataContext;
+using Example.Repositories;
 
-namespace $ext_safeprojectname$.EFCore.Repositories.ExampleEntityRepositories;
+using Model.Entities;
 
-public class ExampleEntityWritableRepository: IExampleEntityWritableRepo
+namespace Example.EFCore.Repositories.ExampleEntityRepositories;
+
+public class ExampleEntityWritableRepository : IExampleEntityWritableRepo
 {
     private readonly ExampleDbContext _dbContext;
 
@@ -14,7 +16,9 @@ public class ExampleEntityWritableRepository: IExampleEntityWritableRepo
 
     public ValueTask<string> Create(ExampleEntity obj)
     {
-        throw new NotImplementedException();
+        string hello = "Hello world";
+
+        return ValueTask.FromResult(hello);
     }
 
     public ValueTask<string> Update(ExampleEntity obj)

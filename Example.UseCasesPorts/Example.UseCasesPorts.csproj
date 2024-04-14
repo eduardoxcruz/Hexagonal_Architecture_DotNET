@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\$ext_safeprojectname$.DTOs\$ext_safeprojectname$.DTOs.csproj" />
-      <ProjectReference Include="..\SeedWork\SeedWork.csproj" />
+        <ProjectReference Include="..\Example.DTOs\Example.DTOs.csproj"/>
+        <ProjectReference Include="..\SeedWork\SeedWork.csproj"/>
     </ItemGroup>
 
 </Project>

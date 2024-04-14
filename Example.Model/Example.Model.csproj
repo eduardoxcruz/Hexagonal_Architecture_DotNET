@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Aggregates\" />
-      <Folder Include="ValueObjects\" />
+        <Folder Include="Aggregates\"/>
+        <Folder Include="ValueObjects\"/>
     </ItemGroup>
 
 </Project>

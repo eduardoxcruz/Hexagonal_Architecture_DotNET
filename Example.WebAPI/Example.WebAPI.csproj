@@ -13,13 +13,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <Content Include="..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\$ext_safeprojectname$.WebApi.Controllers\$ext_safeprojectname$.WebApi.Controllers.csproj" />
+        <ProjectReference Include="..\Example.WebApi.Controllers\Example.WebApi.Controllers.csproj"/>
     </ItemGroup>
 
 </Project>

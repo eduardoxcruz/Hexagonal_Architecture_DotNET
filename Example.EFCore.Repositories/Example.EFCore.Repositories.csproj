@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\$ext_safeprojectname$.EFCore.DataContext\$ext_safeprojectname$.EFCore.DataContext.csproj" />
-      <ProjectReference Include="..\$ext_safeprojectname$.Repositories\$ext_safeprojectname$.Repositories.csproj" />
+        <ProjectReference Include="..\Example.EFCore.DataContext\Example.EFCore.DataContext.csproj"/>
+        <ProjectReference Include="..\Example.Repositories\Example.Repositories.csproj"/>
     </ItemGroup>
 
 </Project>

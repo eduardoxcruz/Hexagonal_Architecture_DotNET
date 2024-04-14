@@ -1,14 +1,14 @@
-﻿using System.Threading.Tasks;
+﻿using DTOs.ExampleUseCase;
 
+using Example.Repositories;
 
-using Interfaces.Repositories;
+using Model.Entities;
 
-using SeedWork;
-
+using UseCasesPorts.ExampleUseCase;
 
 namespace UseCases.ExampleUseCase;
 
-public class ExampleUseCase: IExampleUseCaseInputPort
+public class ExampleUseCase : IExampleUseCaseInputPort
 {
     private readonly IExampleUseCaseOutputPort _outputPort;
     private readonly IExampleEntityWritableRepo _writableRepository;
@@ -21,9 +21,10 @@ public class ExampleUseCase: IExampleUseCaseInputPort
 
     public async ValueTask Handle(ExampleInputDto dto)
     {
-        ExampleEntity entity = new ExampleEntity(dto.Name);
+        ExampleEntity entity = new(dto.Name);
         string id = await _writableRepository.Create(entity);
         ExampleOutputDto outputDto = new(id);
+        Console.WriteLine(outputDto.Id);
         await _outputPort.Handle(outputDto);
     }
 }

@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\$ext_safeprojectname$.Repositories\$ext_safeprojectname$.Repositories.csproj" />
-      <ProjectReference Include="..\$ext_safeprojectname$.UseCasesPorts\$ext_safeprojectname$.UseCasesPorts.csproj" />
+        <ProjectReference Include="..\Example.Repositories\Example.Repositories.csproj"/>
+        <ProjectReference Include="..\Example.UseCasesPorts\Example.UseCasesPorts.csproj"/>
     </ItemGroup>
 
 </Project>

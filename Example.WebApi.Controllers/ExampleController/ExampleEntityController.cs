@@ -1,14 +1,14 @@
-﻿using System.Threading.Tasks;
-
+﻿using DTOs.ExampleUseCase;
 
 using Microsoft.AspNetCore.Mvc;
+
 using SeedWork;
 
-namespace WebApi.Controllers.ExampleController;
+namespace Example.WebApi.Controllers.ExampleController;
 
 [Route("api/Example")]
 [ApiController]
-public class ExampleEntityController: ControllerBase
+public class ExampleEntityController : ControllerBase
 {
     private readonly IController<ExampleOutputDto, ExampleInputDto> _controller;
 
@@ -16,7 +16,7 @@ public class ExampleEntityController: ControllerBase
     {
         _controller = controller;
     }
-    
+
     [HttpGet]
     public async Task<IActionResult> GetExample()
     {

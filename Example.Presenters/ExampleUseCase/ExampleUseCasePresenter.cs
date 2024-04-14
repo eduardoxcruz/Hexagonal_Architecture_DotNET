@@ -1,14 +1,15 @@
-﻿using System.Threading.Tasks;
-
+﻿using DTOs.ExampleUseCase;
 
 using SeedWork;
 
+using UseCasesPorts.ExampleUseCase;
 
-namespace $ext_safeprojectname$.Presenters.ExampleUseCase;
+namespace Example.Presenters.ExampleUseCase;
 
-public class ExampleUseCasePresenter: IPresenterT<ExampleOutputDto>, IExampleUseCaseOutputPort
+public class ExampleUseCasePresenter : IPresenterT<ExampleOutputDto>, IExampleUseCaseOutputPort
 {
     public ExampleOutputDto Content { get; private set; }
+
     public ValueTask Handle(ExampleOutputDto dto)
     {
         Content = dto;

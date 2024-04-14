@@ -1,9 +1,12 @@
-﻿
+﻿using Example.EFCore.DataContext;
+using Example.EFCore.Repositories.ExampleEntityRepositories;
+using Example.Repositories;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace $ext_safeprojectname$.EFCore.Repositories;
+namespace Example.EFCore.Repositories;
 
 public static class DependencyContainer
 {
@@ -18,6 +21,5 @@ public static class DependencyContainer
         services.AddScoped<IExampleEntityWritableRepo, ExampleEntityWritableRepository>();
 
         return services;
-
     }
 }

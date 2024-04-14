@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace SeedWork;
+﻿namespace SeedWork;
 
 public interface IWritableRepository<TReturn, in TParam>
 {

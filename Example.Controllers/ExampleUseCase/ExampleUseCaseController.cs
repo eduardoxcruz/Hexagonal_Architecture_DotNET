@@ -1,12 +1,12 @@
-﻿using System.Threading.Tasks;
-
+﻿using DTOs.ExampleUseCase;
 
 using SeedWork;
 
+using UseCasesPorts.ExampleUseCase;
 
 namespace Controllers.ExampleUseCase;
 
-public class ExampleUseCaseController: IController<ExampleOutputDto, ExampleInputDto>
+public class ExampleUseCaseController : IController<ExampleOutputDto, ExampleInputDto>
 {
     private readonly IExampleUseCaseInputPort _inputPort;
     private readonly IExampleUseCaseOutputPort _outputPort;

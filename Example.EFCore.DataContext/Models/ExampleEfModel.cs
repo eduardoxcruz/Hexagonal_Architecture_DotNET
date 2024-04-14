@@ -1,8 +1,10 @@
-﻿
-namespace $ext_safeprojectname$.EFCore.DataContext.Models;
+﻿using Model.Entities;
 
-public class ExampleEfModel: ExampleEntity
+namespace Example.EFCore.DataContext.Models;
+
+public class ExampleEfModel : ExampleEntity
 {
     public ExampleEfModel(string name) : base(name)
-    { }
+    {
+    }
 }

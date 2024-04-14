@@ -1,8 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿namespace SeedWork;
 
-namespace SeedWork;
-
-public interface IController<TOutputDto, in TInputDto> 
+public interface IController<TOutputDto, in TInputDto>
     where TOutputDto : EmptyDto
     where TInputDto : EmptyDto
 {

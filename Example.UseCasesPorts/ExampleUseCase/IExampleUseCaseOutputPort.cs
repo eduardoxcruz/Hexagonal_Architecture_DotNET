@@ -1,9 +1,9 @@
-﻿
+﻿using DTOs.ExampleUseCase;
+
 using SeedWork;
 
 namespace UseCasesPorts.ExampleUseCase;
 
-public interface IExampleUseCaseOutputPort: IPort<ExampleOutputDto>
+public interface IExampleUseCaseOutputPort : IPort<ExampleOutputDto>
 {
-    
 }

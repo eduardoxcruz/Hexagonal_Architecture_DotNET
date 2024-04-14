@@ -1,7 +1,14 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Controllers;
+
+using Example.EFCore.Repositories;
+using Example.Presenters;
+
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace $ext_safeprojectname$.IoC;
+using UseCases;
+
+namespace Example.IoC;
 
 public static class DependencyContainer
 {
@@ -9,7 +16,7 @@ public static class DependencyContainer
         this IServiceCollection services,
         IConfiguration configuration,
         string connectionStringName
-        )
+    )
     {
         services
             .AddExampleEfCoreRepositories(configuration, connectionStringName)

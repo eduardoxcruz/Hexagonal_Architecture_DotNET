@@ -1,9 +1,9 @@
-﻿
+﻿using Model.Entities;
+
 using SeedWork;
 
-namespace Repositories;
+namespace Example.Repositories;
 
-public interface IExampleEntityWritableRepo: IWritableRepository<string, ExampleEntity>
+public interface IExampleEntityWritableRepo : IWritableRepository<string, ExampleEntity>
 {
-    
 }

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>UseCases</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\$ext_safeprojectname$.Repositories\$ext_safeprojectname$.Repositories.csproj" />
+      <ProjectReference Include="..\$ext_safeprojectname$.UseCasesPorts\$ext_safeprojectname$.UseCasesPorts.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\$ext_safeprojectname$.Controllers\$ext_safeprojectname$.Controllers.csproj" />
+      <ProjectReference Include="..\$ext_safeprojectname$.EFCore.Repositories\$ext_safeprojectname$.EFCore.Repositories.csproj" />
+      <ProjectReference Include="..\$ext_safeprojectname$.Presenters\$ext_safeprojectname$.Presenters.csproj" />
+      <ProjectReference Include="..\$ext_safeprojectname$.UseCases\$ext_safeprojectname$.UseCases.csproj" />
+    </ItemGroup>
+
+</Project>

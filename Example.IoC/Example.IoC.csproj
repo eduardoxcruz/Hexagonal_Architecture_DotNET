@@ -7,10 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Example.Controllers\Example.Controllers.csproj"/>
-        <ProjectReference Include="..\Example.EFCore.Repositories\Example.EFCore.Repositories.csproj"/>
-        <ProjectReference Include="..\Example.Presenters\Example.Presenters.csproj"/>
-        <ProjectReference Include="..\Example.UseCases\Example.UseCases.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.Controllers\$ext_safeprojectname$.Controllers.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.EFCore.Repositories\$ext_safeprojectname$.EFCore.Repositories.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.Presenters\$ext_safeprojectname$.Presenters.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.UseCases\$ext_safeprojectname$.UseCases.csproj"/>
     </ItemGroup>
 
 </Project>

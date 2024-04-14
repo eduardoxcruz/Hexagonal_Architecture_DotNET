@@ -1,9 +1,9 @@
-﻿using Example.EFCore.DataContext;
-using Example.Repositories;
+﻿using $ext_safeprojectname$.EFCore.DataContext;
+using $ext_safeprojectname$.Repositories;
 
-using Model.Entities;
+using $ext_safeprojectname$.Model.Entities;
 
-namespace Example.EFCore.Repositories.ExampleEntityRepositories;
+namespace $ext_safeprojectname$.EFCore.Repositories.ExampleEntityRepositories;
 
 public class ExampleEntityWritableRepository : IExampleEntityWritableRepo
 {

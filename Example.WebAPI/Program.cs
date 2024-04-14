@@ -1,4 +1,4 @@
-using Example.IoC;
+using $ext_safeprojectname$.IoC;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 

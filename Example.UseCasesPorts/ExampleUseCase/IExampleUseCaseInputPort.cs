@@ -1,4 +1,4 @@
-﻿using DTOs.ExampleUseCase;
+﻿using $ext_safeprojectname$.DTOs.ExampleUseCase;
 
 using SeedWork;
 

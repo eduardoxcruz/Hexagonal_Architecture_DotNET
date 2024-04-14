@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Example.Model\Example.Model.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.Model\$ext_safeprojectname$.Model.csproj"/>
     </ItemGroup>
 
 </Project>

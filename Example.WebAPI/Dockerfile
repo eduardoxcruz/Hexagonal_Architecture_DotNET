@@ -7,29 +7,29 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Example.WebAPI/Example.WebAPI.csproj", "Example.WebAPI/"]
-COPY ["Example.WebApi.Controllers/Example.WebApi.Controllers.csproj", "Example.WebApi.Controllers/"]
-COPY ["Example.IoC/Example.IoC.csproj", "Example.IoC/"]
-COPY ["Example.Controllers/Example.Controllers.csproj", "Example.Controllers/"]
-COPY ["Example.DTOs/Example.DTOs.csproj", "Example.DTOs/"]
-COPY ["Example.Model/Example.Model.csproj", "Example.Model/"]
+COPY ["$ext_safeprojectname$.WebAPI/$ext_safeprojectname$.WebAPI.csproj", "$ext_safeprojectname$.WebAPI/"]
+COPY ["$ext_safeprojectname$.WebApi.Controllers/$ext_safeprojectname$.WebApi.Controllers.csproj", "$ext_safeprojectname$.WebApi.Controllers/"]
+COPY ["$ext_safeprojectname$.IoC/$ext_safeprojectname$.IoC.csproj", "$ext_safeprojectname$.IoC/"]
+COPY ["$ext_safeprojectname$.Controllers/$ext_safeprojectname$.Controllers.csproj", "$ext_safeprojectname$.Controllers/"]
+COPY ["$ext_safeprojectname$.DTOs/$ext_safeprojectname$.DTOs.csproj", "$ext_safeprojectname$.DTOs/"]
+COPY ["$ext_safeprojectname$.Model/$ext_safeprojectname$.Model.csproj", "$ext_safeprojectname$.Model/"]
 COPY ["SeedWork/SeedWork.csproj", "SeedWork/"]
-COPY ["Example.UseCasesPorts/Example.UseCasesPorts.csproj", "Example.UseCasesPorts/"]
-COPY ["Example.EFCore.Repositories/Example.EFCore.Repositories.csproj", "Example.EFCore.Repositories/"]
-COPY ["Example.EFCore.DataContext/Example.EFCore.DataContext.csproj", "Example.EFCore.DataContext/"]
-COPY ["Example.Repositories/Example.Repositories.csproj", "Example.Repositories/"]
-COPY ["Example.Presenters/Example.Presenters.csproj", "Example.Presenters/"]
-COPY ["Example.UseCases/Example.UseCases.csproj", "Example.UseCases/"]
-RUN dotnet restore "Example.WebAPI/Example.WebAPI.csproj"
+COPY ["$ext_safeprojectname$.UseCasesPorts/$ext_safeprojectname$.UseCasesPorts.csproj", "$ext_safeprojectname$.UseCasesPorts/"]
+COPY ["$ext_safeprojectname$.EFCore.Repositories/$ext_safeprojectname$.EFCore.Repositories.csproj", "$ext_safeprojectname$.EFCore.Repositories/"]
+COPY ["$ext_safeprojectname$.EFCore.DataContext/$ext_safeprojectname$.EFCore.DataContext.csproj", "$ext_safeprojectname$.EFCore.DataContext/"]
+COPY ["$ext_safeprojectname$.Repositories/$ext_safeprojectname$.Repositories.csproj", "$ext_safeprojectname$.Repositories/"]
+COPY ["$ext_safeprojectname$.Presenters/$ext_safeprojectname$.Presenters.csproj", "$ext_safeprojectname$.Presenters/"]
+COPY ["$ext_safeprojectname$.UseCases/$ext_safeprojectname$.UseCases.csproj", "$ext_safeprojectname$.UseCases/"]
+RUN dotnet restore "$ext_safeprojectname$.WebAPI/$ext_safeprojectname$.WebAPI.csproj"
 COPY . .
-WORKDIR "/src/Example.WebAPI"
-RUN dotnet build "Example.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/$ext_safeprojectname$.WebAPI"
+RUN dotnet build "$ext_safeprojectname$.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "Example.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "$ext_safeprojectname$.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Example.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "$ext_safeprojectname$.WebAPI.dll"]

@@ -1,10 +1,10 @@
-﻿using DTOs.ExampleUseCase;
+﻿using $ext_safeprojectname$.DTOs.ExampleUseCase;
 
 using SeedWork;
 
-using UseCasesPorts.ExampleUseCase;
+using $ext_safeprojectname$.UseCasesPorts.ExampleUseCase;
 
-namespace Example.Presenters.ExampleUseCase;
+namespace $ext_safeprojectname$.Presenters.ExampleUseCase;
 
 public class ExampleUseCasePresenter : IPresenterT<ExampleOutputDto>, IExampleUseCaseOutputPort
 {

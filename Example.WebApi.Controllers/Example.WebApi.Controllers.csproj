@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Example.IoC\Example.IoC.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.IoC\$ext_safeprojectname$.IoC.csproj"/>
     </ItemGroup>
 
     <ItemGroup>

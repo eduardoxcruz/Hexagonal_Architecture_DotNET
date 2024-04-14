@@ -1,9 +1,9 @@
-﻿using Example.EFCore.DataContext.Entities;
-using Example.EFCore.DataContext.Models;
+﻿using $ext_safeprojectname$.EFCore.DataContext.Entities;
+using $ext_safeprojectname$.EFCore.DataContext.Models;
 
 using Microsoft.EntityFrameworkCore;
 
-namespace Example.EFCore.DataContext;
+namespace $ext_safeprojectname$.EFCore.DataContext;
 
 public partial class ExampleDbContext : DbContext
 {

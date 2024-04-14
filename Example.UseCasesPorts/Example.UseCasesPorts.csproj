@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Example.DTOs\Example.DTOs.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.DTOs\$ext_safeprojectname$.DTOs.csproj"/>
         <ProjectReference Include="..\SeedWork\SeedWork.csproj"/>
     </ItemGroup>
 

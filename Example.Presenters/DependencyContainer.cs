@@ -1,10 +1,10 @@
-﻿using Example.Presenters.ExampleUseCase;
+﻿using $ext_safeprojectname$.Presenters.ExampleUseCase;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using UseCasesPorts.ExampleUseCase;
+using $ext_safeprojectname$.UseCasesPorts.ExampleUseCase;
 
-namespace Example.Presenters;
+namespace $ext_safeprojectname$.Presenters;
 
 public static class DependencyContainer
 {

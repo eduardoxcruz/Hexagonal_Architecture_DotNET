@@ -1,6 +1,6 @@
 ﻿using Controllers.ExampleUseCase;
 
-using DTOs.ExampleUseCase;
+using $ext_safeprojectname$.DTOs.ExampleUseCase;
 
 using Microsoft.Extensions.DependencyInjection;
 

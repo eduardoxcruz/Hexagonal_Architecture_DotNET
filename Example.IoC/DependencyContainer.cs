@@ -1,14 +1,14 @@
-﻿using Controllers;
+﻿using $ext_safeprojectname$.Controllers;
 
-using Example.EFCore.Repositories;
-using Example.Presenters;
+using $ext_safeprojectname$.EFCore.Repositories;
+using $ext_safeprojectname$.Presenters;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using UseCases;
+using $ext_safeprojectname$.UseCases;
 
-namespace Example.IoC;
+namespace $ext_safeprojectname$.IoC;
 
 public static class DependencyContainer
 {

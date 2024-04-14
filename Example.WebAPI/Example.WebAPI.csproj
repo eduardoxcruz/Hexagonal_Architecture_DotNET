@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Example.WebApi.Controllers\Example.WebApi.Controllers.csproj"/>
+        <ProjectReference Include="..\$ext_safeprojectname$.WebApi.Controllers\$ext_safeprojectname$.WebApi.Controllers.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
-﻿using DTOs.ExampleUseCase;
+﻿using $ext_safeprojectname$.DTOs.ExampleUseCase;
 
 using SeedWork;
 
-using UseCasesPorts.ExampleUseCase;
+using $ext_safeprojectname$.UseCasesPorts.ExampleUseCase;
 
 namespace Controllers.ExampleUseCase;
 

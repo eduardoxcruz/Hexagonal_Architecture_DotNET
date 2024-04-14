@@ -1,10 +1,10 @@
-﻿using DTOs.ExampleUseCase;
+﻿using $ext_safeprojectname$.DTOs.ExampleUseCase;
 
-using Example.Repositories;
+using $ext_safeprojectname$.Repositories;
 
-using Model.Entities;
+using $ext_safeprojectname$.Model.Entities;
 
-using UseCasesPorts.ExampleUseCase;
+using $ext_safeprojectname$.UseCasesPorts.ExampleUseCase;
 
 namespace UseCases.ExampleUseCase;
 

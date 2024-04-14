@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-using UseCasesPorts.ExampleUseCase;
+using $ext_safeprojectname$.UseCasesPorts.ExampleUseCase;
 
 namespace UseCases;
 

@@ -1,6 +1,6 @@
-﻿using Model.Entities;
+﻿using $ext_safeprojectname$.Model.Entities;
 
-namespace Example.EFCore.DataContext.Models;
+namespace $ext_safeprojectname$.EFCore.DataContext.Models;
 
 public class ExampleEfModel : ExampleEntity
 {

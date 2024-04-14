@@ -1,12 +1,12 @@
-﻿using DTOs.ExampleUseCase;
+﻿using $ext_safeprojectname$.DTOs.ExampleUseCase;
 
 using Microsoft.AspNetCore.Mvc;
 
 using SeedWork;
 
-namespace Example.WebApi.Controllers.ExampleController;
+namespace $ext_safeprojectname$.WebApi.Controllers.ExampleController;
 
-[Route("api/Example")]
+[Route("api/$ext_safeprojectname$")]
 [ApiController]
 public class ExampleEntityController : ControllerBase
 {

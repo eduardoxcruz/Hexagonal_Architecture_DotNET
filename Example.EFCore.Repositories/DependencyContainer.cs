@@ -1,12 +1,12 @@
-﻿using Example.EFCore.DataContext;
-using Example.EFCore.Repositories.ExampleEntityRepositories;
-using Example.Repositories;
+﻿using $ext_safeprojectname$.EFCore.DataContext;
+using $ext_safeprojectname$.EFCore.Repositories.ExampleEntityRepositories;
+using $ext_safeprojectname$.Repositories;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Example.EFCore.Repositories;
+namespace $ext_safeprojectname$.EFCore.Repositories;
 
 public static class DependencyContainer
 {

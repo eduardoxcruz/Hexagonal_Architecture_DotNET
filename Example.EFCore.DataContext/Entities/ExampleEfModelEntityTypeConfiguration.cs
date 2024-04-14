@@ -1,9 +1,9 @@
-﻿using Example.EFCore.DataContext.Models;
+﻿using $ext_safeprojectname$.EFCore.DataContext.Models;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Example.EFCore.DataContext.Entities;
+namespace $ext_safeprojectname$.EFCore.DataContext.Entities;
 
 public class ExampleEfModelEntityTypeConfiguration : IEntityTypeConfiguration<ExampleEfModel>
 {

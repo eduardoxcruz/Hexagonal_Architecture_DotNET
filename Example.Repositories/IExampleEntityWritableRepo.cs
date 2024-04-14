@@ -1,8 +1,8 @@
-﻿using Model.Entities;
+﻿using $ext_safeprojectname$.Model.Entities;
 
 using SeedWork;
 
-namespace Example.Repositories;
+namespace $ext_safeprojectname$.Repositories;
 
 public interface IExampleEntityWritableRepo : IWritableRepository<string, ExampleEntity>
 {
